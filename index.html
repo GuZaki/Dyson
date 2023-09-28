@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Open+Sans&family=Roboto:ital,wght@0,100;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Dyson</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <button class="header__burger">
+                <svg width="50" height="50" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_388_4578)">
+                    <path d="M15.1965 14.582H44.3632" stroke="white" stroke-width="2.58934" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.1965 25H44.3632" stroke="white" stroke-width="2.58934" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.1965 35.416H44.3632" stroke="white" stroke-width="2.58934" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_388_4578" x="0.779785" y="0" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_388_4578"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_388_4578" result="shape"/>
+                    </filter>
+                    </defs>
+                </svg>
+            </button>
+
+            <img class="heder__logo" src="./img/logo.svg" alt="Логотип магазина Dyson">
+
+            <nav class="header__navigation">
+                <ul class="header__navigation-list">
+                    <li><a class="header__navigation-list-link" href="#">О нас</a></li>
+                    <li><a class="header__navigation-list-link" href="#">Доставка и оплата</a></li>
+                    <li><a class="header__navigation-list-link" href="#">Регистрация продукта</a></li>
+                    <li><a class="header__navigation-list-link" href="#">Сервис</a></li>
+                    <li><a class="header__navigation-list-link" href="#">Сертификаты и лицензии</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__card">
+                <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.27979 13.5C5.27979 11.8431 6.62293 10.5 8.27979 10.5H29.2798C30.9367 10.5 32.2798 11.8431 32.2798 13.5V30C32.2798 31.6569 30.9367 33 29.2798 33H8.27979C6.62293 33 5.27979 31.6569 5.27979 30V13.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.7798 15V9C12.7798 5.68629 15.4661 3 18.7798 3C22.0934 3 24.7798 5.68629 24.7798 9V14.5332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="baner">
+            <img src="./img/bunner.png" alt="">
+            <div class="wrapper">
+                <h1 class="hidden"></h1>
+                <h2 class="bunner__subtitle">Уникальные технологии для ухода за волосами</h2>
+                <p class="bunner__text">Идеальная укладка для всех типов волос вместе с Dyson</p>
+                <button class="bunner__btn">Подробнее</button>
+            </div>
+            
+        </section>
+
+        <!-- <section class="goods-catalog">
+            <div class="wrapper">
+                <ul class="catalog__list">
+                    <li class="catalog__list-item">
+                        <img src="" alt="" class="catalog__list-img">
+                        <div class="catalog__list-description">
+                            <h3 class="catalog__list-subtitle">Акции</h3>
+                            <button class="catalog__list-btn">Подробнее</button>
+                        </div>
+                    </li>
+                    <li class="catalog__list-item">
+                        <img src="" alt="" class="catalog__list-img">
+                        <div class="catalog__list-description">
+                            <h3 class="catalog__list-subtitle">Фены</h3>
+                            <button class="catalog__list-btn">Подробнее</button>
+                        </div>
+                    </li>
+                    <li class="catalog__list-item">
+                        <img src="" alt="" class="catalog__list-img">
+                        <div class="catalog__list-description">
+                            <h3 class="catalog__list-subtitle">Стайлеры</h3>
+                            <button class="catalog__list-btn">Подробнее</button>
+                        </div>
+                    </li>
+                    <li class="catalog__list-item">
+                        <img src="" alt="" class="catalog__list-img">
+                        <div class="catalog__list-description">
+                            <h3 class="catalog__list-subtitle">Выпрямители</h3>
+                            <button class="catalog__list-btn">Подробнее</button>
+                        </div>
+                    </li>
+                    <li class="catalog__list-item">
+                        <img src="" alt="" class="catalog__list-img">
+                        <div class="catalog__list-description">
+                            <h3 class="catalog__list-subtitle">Акции</h3>
+                            <button class="catalog__list-btn">Подробнее</button>
+                        </div>
+                    </li>
+                    <li class="catalog__list-item">
+                        <img src="" alt="" class="catalog__list-img">
+                        <div class="catalog__list-description">
+                            <h3 class="catalog__list-subtitle">Фены</h3>
+                            <button class="catalog__list-btn">Подробнее</button>
+                        </div>
+                    </li>
+                    <li class="catalog__list-item">
+                        <img src="" alt="" class="catalog__list-img">
+                        <div class="catalog__list-description">
+                            <h3 class="catalog__list-subtitle">Стайлеры</h3>
+                            <button class="catalog__list-btn">Подробнее</button>
+                        </div>
+                    </li>
+                    <li class="catalog__list-item">
+                        <img src="" alt="" class="catalog__list-img">
+                        <div class="catalog__list-description">
+                            <h3 class="catalog__list-subtitle">Выпрямители</h3>
+                            <button class="catalog__list-btn">Подробнее</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+    </main>
+    
+</body>
+</html>

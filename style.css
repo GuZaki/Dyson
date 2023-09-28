@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "NAMU";
+    src: local("NAMU Regular"),
+        url("fonts/NAMU-1990.woff2") format("woff2"),
+        url("fonts/NAMU-1990.woff") format("woff");
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+/*header*/
+.header {
+    font-family: 'NAMU';
+    max-width: 1920px;
+    height: 90px;
+    padding: 6px 286px 7px 280px;
+    color: #ffffff;
+    background-color: #111111;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__burger {
+    width: 50px;
+    height: 50px;
+}
+
+.heder__logo {
+    width: 183px;
+    height: 77px;
+}
+
+.header__navigation-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header__navigation-list-link {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.header__card {
+    width: 36px;
+    height: 36px;
+}
+
+.header__burger:hover, .header__card:hover {
+    cursor: pointer;
+}
+
+/*banner*/
+
