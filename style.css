@@ -25,25 +25,52 @@ button {
     background-color: transparent;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    color: #C5358C;
+    transition: all 1s;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
 /*header*/
 .header {
     font-family: 'NAMU';
-    max-width: 1920px;
-    height: 90px;
-    padding: 6px 286px 7px 280px;
-    color: #ffffff;
+    width: 100%;
+    max-height: 90px;
+    padding: 6px 10px 7px;
     background-color: #111111;
 }
 
-.header__wrapper {
+.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.header__container-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; 
 }
 
 .header__burger {
     width: 50px;
     height: 50px;
+}
+
+.header__burger:hover path{
+    stroke: #C5358C;
+    transition: all 1s;
 }
 
 .heder__logo {
@@ -54,11 +81,13 @@ button {
 .header__navigation-list {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    line-height: 110%;
     gap: 30px;
 }
 
 .header__navigation-list-link {
-    color: #FFF;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 900;
 }
@@ -66,11 +95,499 @@ button {
 .header__card {
     width: 36px;
     height: 36px;
+    margin-right: 14px;/* Perfect Pix */
 }
 
-.header__burger:hover, .header__card:hover {
-    cursor: pointer;
+.header__card:hover path {
+    stroke: #C5358C;
+    transition: all 1s;
+}
+
+@media(max-width: 1400px) {
+    .header__navigation-list {
+        margin-right: 0;
+    }
+
+    .header__container-left {
+        gap: 20px;
+    }
+}
+
+@media(max-width: 1040px) {
+    .header__container {
+        gap: 15px;
+    }
+    
+    .header__navigation-list-link {
+        font-size: 16px;
+    }
+
+    .heder__logo {
+        width: 142px;
+        height: 60px;
+    }
+
+    .header__burger,
+    .header__burger-svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__card,
+    .header__card-svg {
+        width: 31px;
+        height: 31px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-left: 71px;
+        padding-right: 70px;
+    }
+    
+    .header__container-left {
+        width: 199px;
+        gap: 40px;
+    }
+
+    .header__navigation-list {
+        display: none;
+    }
+
+    .header__card {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 390px) {
+    .header__container-left {
+        gap: 25px;
+    }
+    
+    .heder__logo {
+        width: 94px;
+        height: 39px;
+    }
+
+    .header__burger,
+    .header__burger-svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__card,
+    .header__card-svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header__card {
+        position: relative;
+    }
+
+    .header__card::after{
+        position: absolute;
+        content: '1';
+        width: 12px;
+        height: 12px;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 50%;
+        font-family: 'Open Sans';
+        font-size: 9px;
+        font-weight: 700;
+        text-align: center;
+        top: 45%;
+    }
 }
 
 /*banner*/
+.baner {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 850px;
+    background: #DDDDDD url("img/bunner.png") no-repeat 73% / contain;
+    color: #111111;
+    padding-left: 280px;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 556px;
+}
+
+.baner__subtitle {
+    font-family: 'NAMU';
+    font-size: 46px;
+    line-height: 103%;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.baner__text {
+    color: #111111;
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+.baner__btn {
+    color: #ffffff;
+    background-color: #C5358C;
+    border-radius: 3px;
+    width: 235px;
+    height: 64px;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.baner__btn:hover {
+    background-color: #5e1741;
+    transition: all 1s;
+}
+
+@media(max-width: 1780px) {
+    .baner {
+        padding-left: 71px;
+    }
+}
+
+@media(max-width: 1500px) {
+    .baner {
+        background-position: 95%;
+    } 
+}
+
+@media(max-width: 1430px) {
+    .baner__text {
+        width: 400px;
+    }
+}
+
+@media(max-width: 1260px) {
+    .baner {
+        height: 700px;
+    }
+    
+    .baner__subtitle {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .baner__text {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .baner__btn {
+        width: 141px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1110px) {
+    .baner {
+        height: 600px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .baner {
+        height: 480px;
+    }
+    
+    .container {
+        width: 410px;
+    }
+    
+    .baner__subtitle {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .baner__text {
+        width: 253px;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    
+    .baner__btn {
+        width: 141px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+    .baner {
+        height: 389px;
+    }
+
+    .container {
+        width: 363px;
+    }
+    
+    .baner__subtitle {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .baner__text {
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+    
+    .baner__btn {
+        width: 141px;
+        height: 36px;
+        font-size: 16px;
+    }
+}  
+
+@media(max-width: 660px) {
+    .container {
+        width: 363px;
+    }
+    
+    .baner__subtitle {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    
+    .baner__text {
+        margin-bottom: 30px;
+        width: 170px;
+    }
+    
+    .baner__btn {
+        width: 141px;
+        height: 36px;
+        font-size: 16px;
+        margin-bottom: 178px;
+    }
+}  
+
+@media(max-width: 390px) {
+    .baner {
+        padding-left: 20px;
+        height: 392px;
+        background-position: bottom right;
+        background-size: 280px 274px;
+    }
+
+    .container {
+        width: 290px;
+    }
+} 
+
+/*catalog*/
+.catalog {
+    width: 100%;
+    height: 1228px;
+    background-color: #ffffff;
+    padding-top: 150px;
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.catalog__list-card {
+    max-width: 325px;
+    height: 454px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 41px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog__list-img {
+    width: 100%;
+    height: 325px;
+}
+
+.catalog__list-img img {
+    height: 100%;
+}
+
+.catalog__list-description {
+    padding: 20px 0 0 50px;
+    width: 100%;
+    height: 130px;
+}
+
+.catalog__list-card:hover
+.catalog__list-description {
+    background-color: #111111;    
+    color: #ffffff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+}
+
+.catalog__list-card:hover
+.catalog__list-btn {
+    color: #ffffff;
+}
+
+.catalog__list-card:hover 
+.catalog__list-btn path{
+    fill: #ffffff;
+}
+
+.catalog__list-subtitle {
+    font-family: 'NAMU';
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 11px;
+    height: 33px;
+}
+
+.catalog__list-btn {
+    display: flex;
+    gap: 20px;
+    height: 33px;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media (max-width: 1400px) {
+    .catalog {
+        height: 1682px;
+    }
+    
+    .catalog__list {
+        width: 940px;
+    }
+    .catalog__list-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .catalog {
+        height: 2136px;
+    }
+    
+    .catalog__list {
+        width: 620px;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        padding-top: 60px;
+        height: 554px;
+    }
+
+    .catalog__list {
+        width: 629px;
+    }
+    .catalog__list-card {
+        width: 142px;
+        height: 207px;
+    }
+
+    .catalog__list-img {
+        width: 142px;
+        height: 142px;
+    }
+    
+    .catalog__list-description {
+        padding: 10px 0 0 12px;
+        width: 142px;
+        height: 65px;
+    }
+
+    .catalog__list-subtitle {
+        font-size: 16px;
+        height: 19px;
+    }
+    
+    .catalog__list-btn {
+        font-size: 12px;
+        height: 16px;
+        gap: 8px;
+    }
+
+    .catalog__list-svg {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .catalog {
+        height: 800px;
+    }
+
+    .catalog__list {
+        width: 467px;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog {
+        height: 1047px;
+        padding-top: 31px;
+    }
+
+    .catalog__list {
+        width: 305px;
+    }
+
+    .catalog__list-card {
+        width: 142px;
+        height: 235px;
+    }
+
+    .catalog__list-img {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .catalog__list-description {
+        padding: 10px 0 0 12px;
+        width: 142px;
+        height: 65px;
+    }
+
+    .catalog__list-subtitle {
+        font-size: 16px;
+        height: 19px;
+    }
+    
+    .catalog__list-btn {
+        font-size: 12px;
+        height: 16px;
+        gap: 8px;
+    }
+
+    .catalog__list-svg {
+        width: 12px;
+        height: 12px;
+    }
+}

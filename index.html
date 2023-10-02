@@ -11,126 +11,208 @@
     <title>Dyson</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__wrapper">
-            <button class="header__burger">
-                <svg width="50" height="50" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_d_388_4578)">
-                    <path d="M15.1965 14.582H44.3632" stroke="white" stroke-width="2.58934" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M15.1965 25H44.3632" stroke="white" stroke-width="2.58934" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M15.1965 35.416H44.3632" stroke="white" stroke-width="2.58934" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                    <defs>
-                    <filter id="filter0_d_388_4578" x="0.779785" y="0" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset dy="4"/>
-                    <feGaussianBlur stdDeviation="2"/>
-                    <feComposite in2="hardAlpha" operator="out"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_388_4578"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_388_4578" result="shape"/>
-                    </filter>
-                    </defs>
-                </svg>
-            </button>
-
-            <img class="heder__logo" src="./img/logo.svg" alt="Логотип магазина Dyson">
-
-            <nav class="header__navigation">
-                <ul class="header__navigation-list">
-                    <li><a class="header__navigation-list-link" href="#">О нас</a></li>
-                    <li><a class="header__navigation-list-link" href="#">Доставка и оплата</a></li>
-                    <li><a class="header__navigation-list-link" href="#">Регистрация продукта</a></li>
-                    <li><a class="header__navigation-list-link" href="#">Сервис</a></li>
-                    <li><a class="header__navigation-list-link" href="#">Сертификаты и лицензии</a></li>
-                </ul>
-            </nav>
-
-            <button class="header__card">
-                <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.27979 13.5C5.27979 11.8431 6.62293 10.5 8.27979 10.5H29.2798C30.9367 10.5 32.2798 11.8431 32.2798 13.5V30C32.2798 31.6569 30.9367 33 29.2798 33H8.27979C6.62293 33 5.27979 31.6569 5.27979 30V13.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.7798 15V9C12.7798 5.68629 15.4661 3 18.7798 3C22.0934 3 24.7798 5.68629 24.7798 9V14.5332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
-    </header>
-
-    <main>
-        <section class="baner">
-            <img src="./img/bunner.png" alt="">
-            <div class="wrapper">
-                <h1 class="hidden"></h1>
-                <h2 class="bunner__subtitle">Уникальные технологии для ухода за волосами</h2>
-                <p class="bunner__text">Идеальная укладка для всех типов волос вместе с Dyson</p>
-                <button class="bunner__btn">Подробнее</button>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__container-left">
+                    <button class="header__burger">
+                            <svg class="header__burger-svg" width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_388_4578)">
+                                <path d="M15.1965 14.582H44.3632" stroke="white" stroke-width="2.58934" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.1965 25H44.3632" stroke="white" stroke-width="2.58934" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.1965 35.416H44.3632" stroke="white" stroke-width="2.58934" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_d_388_4578" x="0.779785" y="0" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="4"/>
+                                <feGaussianBlur stdDeviation="2"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_388_4578"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_388_4578" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                    </button>
+                    <img class="heder__logo" src="./img/logo.svg" alt="Логотип магазина Dyson">
+                </div>               
+                <nav class="header__navigation">
+                    <ul class="header__navigation-list">
+                        <li><a class="header__navigation-list-link" href="#">О нас</a></li>
+                        <li><a class="header__navigation-list-link" href="#">Доставка и оплата</a></li>
+                        <li><a class="header__navigation-list-link" href="#">Регистрация продукта</a></li>
+                        <li><a class="header__navigation-list-link" href="#">Сервис</a></li>
+                        <li><a class="header__navigation-list-link" href="#">Сертификаты и лицензии</a></li>
+                    </ul>
+                </nav>
+                <button class="header__card">
+                    <svg class="header__card-svg" width="36" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.27979 13.5C5.27979 11.8431 6.62293 10.5 8.27979 10.5H29.2798C30.9367 10.5 32.2798 11.8431 32.2798 13.5V30C32.2798 31.6569 30.9367 33 29.2798 33H8.27979C6.62293 33 5.27979 31.6569 5.27979 30V13.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.7798 15V9C12.7798 5.68629 15.4661 3 18.7798 3C22.0934 3 24.7798 5.68629 24.7798 9V14.5332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
-            
-        </section>
+        </header>
 
-        <!-- <section class="goods-catalog">
-            <div class="wrapper">
+        <main>
+            <section class="baner">
+                <div class="container">
+                    <h1 class="baner__subtitle">Уникальные технологии для ухода за волосами</h1>
+                    <p class="baner__text">Идеальная укладка для всех типов волос вместе с Dyson</p>
+                    <button class="baner__btn">Подробнее</button>
+                </div>                
+            </section>
+            <section class="catalog">
                 <ul class="catalog__list">
-                    <li class="catalog__list-item">
-                        <img src="" alt="" class="catalog__list-img">
+                    <li class="catalog__list-card">
+                        <img class="catalog__list-img" src="img/cart_1.png" alt="Фото товара">
                         <div class="catalog__list-description">
-                            <h3 class="catalog__list-subtitle">Акции</h3>
-                            <button class="catalog__list-btn">Подробнее</button>
+                            <h2 class="catalog__list-subtitle">Акции</h2>
+                            <button class="catalog__list-btn">Подробнее
+                                <svg class="catalog__list-svg" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_1223_38)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.2237 18.0666L3.03236 17.8613C2.58011 17.8575 2.21793 17.4853 2.22643 17.0331C2.2348 16.5874 2.60044 16.2316 3.04616 16.2354L27.3725 16.4418L18.0366 6.43038C17.7287 6.10023 17.7468 5.58301 18.077 5.27514C18.4071 4.96727 18.9243 4.98533 19.2322 5.31548L29.7307 16.5738C30.1074 16.9777 30.0853 17.6104 29.6814 17.9871L17.7599 29.104C17.4332 29.4087 16.9213 29.3908 16.6165 29.0641C16.3118 28.7373 16.3297 28.2254 16.6565 27.9207L27.2237 18.0666Z" fill="#111111"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1223_38">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
                         </div>
                     </li>
-                    <li class="catalog__list-item">
-                        <img src="" alt="" class="catalog__list-img">
+                    <li class="catalog__list-card">
+                        <img class="catalog__list-img" src="img/cart_2.png" alt="Фото товара">
                         <div class="catalog__list-description">
-                            <h3 class="catalog__list-subtitle">Фены</h3>
-                            <button class="catalog__list-btn">Подробнее</button>
+                            <h2 class="catalog__list-subtitle">Фены</h2>
+                            <button class="catalog__list-btn">Подробнее
+                                <svg class="catalog__list-svg" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_1223_38)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.2237 18.0666L3.03236 17.8613C2.58011 17.8575 2.21793 17.4853 2.22643 17.0331C2.2348 16.5874 2.60044 16.2316 3.04616 16.2354L27.3725 16.4418L18.0366 6.43038C17.7287 6.10023 17.7468 5.58301 18.077 5.27514C18.4071 4.96727 18.9243 4.98533 19.2322 5.31548L29.7307 16.5738C30.1074 16.9777 30.0853 17.6104 29.6814 17.9871L17.7599 29.104C17.4332 29.4087 16.9213 29.3908 16.6165 29.0641C16.3118 28.7373 16.3297 28.2254 16.6565 27.9207L27.2237 18.0666Z" fill="#111111"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1223_38">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
                         </div>
                     </li>
-                    <li class="catalog__list-item">
-                        <img src="" alt="" class="catalog__list-img">
+                    <li class="catalog__list-card">
+                        <img class="catalog__list-img" src="img/cart_3.png" alt="Фото товара">
                         <div class="catalog__list-description">
-                            <h3 class="catalog__list-subtitle">Стайлеры</h3>
-                            <button class="catalog__list-btn">Подробнее</button>
+                            <h2 class="catalog__list-subtitle">Стайлеры</h2>
+                            <button class="catalog__list-btn">Подробнее
+                                <svg class="catalog__list-svg" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_1223_38)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.2237 18.0666L3.03236 17.8613C2.58011 17.8575 2.21793 17.4853 2.22643 17.0331C2.2348 16.5874 2.60044 16.2316 3.04616 16.2354L27.3725 16.4418L18.0366 6.43038C17.7287 6.10023 17.7468 5.58301 18.077 5.27514C18.4071 4.96727 18.9243 4.98533 19.2322 5.31548L29.7307 16.5738C30.1074 16.9777 30.0853 17.6104 29.6814 17.9871L17.7599 29.104C17.4332 29.4087 16.9213 29.3908 16.6165 29.0641C16.3118 28.7373 16.3297 28.2254 16.6565 27.9207L27.2237 18.0666Z" fill="#111111"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1223_38">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
                         </div>
                     </li>
-                    <li class="catalog__list-item">
-                        <img src="" alt="" class="catalog__list-img">
+                    <li class="catalog__list-card">
+                        <img class="catalog__list-img" src="img/cart_4.png" alt="Фото товара">
                         <div class="catalog__list-description">
-                            <h3 class="catalog__list-subtitle">Выпрямители</h3>
-                            <button class="catalog__list-btn">Подробнее</button>
+                            <h2 class="catalog__list-subtitle">Выпрямители</h2>
+                            <button class="catalog__list-btn">Подробнее
+                                <svg class="catalog__list-svg" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_1223_38)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.2237 18.0666L3.03236 17.8613C2.58011 17.8575 2.21793 17.4853 2.22643 17.0331C2.2348 16.5874 2.60044 16.2316 3.04616 16.2354L27.3725 16.4418L18.0366 6.43038C17.7287 6.10023 17.7468 5.58301 18.077 5.27514C18.4071 4.96727 18.9243 4.98533 19.2322 5.31548L29.7307 16.5738C30.1074 16.9777 30.0853 17.6104 29.6814 17.9871L17.7599 29.104C17.4332 29.4087 16.9213 29.3908 16.6165 29.0641C16.3118 28.7373 16.3297 28.2254 16.6565 27.9207L27.2237 18.0666Z" fill="#111111"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1223_38">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
                         </div>
                     </li>
-                    <li class="catalog__list-item">
-                        <img src="" alt="" class="catalog__list-img">
+                    <li class="catalog__list-card">
+                        <img class="catalog__list-img" src="img/cart_1.png" alt="Фото товара">
                         <div class="catalog__list-description">
-                            <h3 class="catalog__list-subtitle">Акции</h3>
-                            <button class="catalog__list-btn">Подробнее</button>
+                            <h2 class="catalog__list-subtitle">Акции</h2>
+                            <button class="catalog__list-btn">Подробнее
+                                <svg class="catalog__list-svg" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_1223_38)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.2237 18.0666L3.03236 17.8613C2.58011 17.8575 2.21793 17.4853 2.22643 17.0331C2.2348 16.5874 2.60044 16.2316 3.04616 16.2354L27.3725 16.4418L18.0366 6.43038C17.7287 6.10023 17.7468 5.58301 18.077 5.27514C18.4071 4.96727 18.9243 4.98533 19.2322 5.31548L29.7307 16.5738C30.1074 16.9777 30.0853 17.6104 29.6814 17.9871L17.7599 29.104C17.4332 29.4087 16.9213 29.3908 16.6165 29.0641C16.3118 28.7373 16.3297 28.2254 16.6565 27.9207L27.2237 18.0666Z" fill="#111111"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1223_38">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
                         </div>
                     </li>
-                    <li class="catalog__list-item">
-                        <img src="" alt="" class="catalog__list-img">
+                    <li class="catalog__list-card">
+                        <img class="catalog__list-img" src="img/cart_2.png" alt="Фото товара">
                         <div class="catalog__list-description">
-                            <h3 class="catalog__list-subtitle">Фены</h3>
-                            <button class="catalog__list-btn">Подробнее</button>
+                            <h2 class="catalog__list-subtitle">Фены</h2>
+                            <button class="catalog__list-btn">Подробнее
+                                <svg class="catalog__list-svg" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_1223_38)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.2237 18.0666L3.03236 17.8613C2.58011 17.8575 2.21793 17.4853 2.22643 17.0331C2.2348 16.5874 2.60044 16.2316 3.04616 16.2354L27.3725 16.4418L18.0366 6.43038C17.7287 6.10023 17.7468 5.58301 18.077 5.27514C18.4071 4.96727 18.9243 4.98533 19.2322 5.31548L29.7307 16.5738C30.1074 16.9777 30.0853 17.6104 29.6814 17.9871L17.7599 29.104C17.4332 29.4087 16.9213 29.3908 16.6165 29.0641C16.3118 28.7373 16.3297 28.2254 16.6565 27.9207L27.2237 18.0666Z" fill="#111111"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1223_38">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
                         </div>
                     </li>
-                    <li class="catalog__list-item">
-                        <img src="" alt="" class="catalog__list-img">
+                    <li class="catalog__list-card">
+                        <img class="catalog__list-img" src="img/cart_3.png" alt="Фото товара">
                         <div class="catalog__list-description">
-                            <h3 class="catalog__list-subtitle">Стайлеры</h3>
-                            <button class="catalog__list-btn">Подробнее</button>
+                            <h2 class="catalog__list-subtitle">Стайлеры</h2>
+                            <button class="catalog__list-btn">Подробнее
+                                <svg class="catalog__list-svg" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_1223_38)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.2237 18.0666L3.03236 17.8613C2.58011 17.8575 2.21793 17.4853 2.22643 17.0331C2.2348 16.5874 2.60044 16.2316 3.04616 16.2354L27.3725 16.4418L18.0366 6.43038C17.7287 6.10023 17.7468 5.58301 18.077 5.27514C18.4071 4.96727 18.9243 4.98533 19.2322 5.31548L29.7307 16.5738C30.1074 16.9777 30.0853 17.6104 29.6814 17.9871L17.7599 29.104C17.4332 29.4087 16.9213 29.3908 16.6165 29.0641C16.3118 28.7373 16.3297 28.2254 16.6565 27.9207L27.2237 18.0666Z" fill="#111111"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1223_38">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
                         </div>
                     </li>
-                    <li class="catalog__list-item">
-                        <img src="" alt="" class="catalog__list-img">
+                    <li class="catalog__list-card">
+                        <img class="catalog__list-img" src="img/cart_4.png" alt="Фото товара">
                         <div class="catalog__list-description">
-                            <h3 class="catalog__list-subtitle">Выпрямители</h3>
-                            <button class="catalog__list-btn">Подробнее</button>
+                            <h2 class="catalog__list-subtitle">Выпрямители</h2>
+                            <button class="catalog__list-btn">Подробнее
+                                <svg class="catalog__list-svg" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_1223_38)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.2237 18.0666L3.03236 17.8613C2.58011 17.8575 2.21793 17.4853 2.22643 17.0331C2.2348 16.5874 2.60044 16.2316 3.04616 16.2354L27.3725 16.4418L18.0366 6.43038C17.7287 6.10023 17.7468 5.58301 18.077 5.27514C18.4071 4.96727 18.9243 4.98533 19.2322 5.31548L29.7307 16.5738C30.1074 16.9777 30.0853 17.6104 29.6814 17.9871L17.7599 29.104C17.4332 29.4087 16.9213 29.3908 16.6165 29.0641C16.3118 28.7373 16.3297 28.2254 16.6565 27.9207L27.2237 18.0666Z" fill="#111111"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1223_38">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
                         </div>
                     </li>
                 </ul>
-            </div>
-        </section> -->
-    </main>
-    
+            </section>
+        </main>
+    </div>
 </body>
 </html>
