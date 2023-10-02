@@ -95,7 +95,7 @@ a:hover {
 .header__card {
     width: 36px;
     height: 36px;
-    margin-right: 14px;/* Perfect Pix */
+    margin-right: 14px;
 }
 
 .header__card:hover path {
@@ -215,7 +215,7 @@ a:hover {
     align-items: center;
     max-width: 100%;
     height: 850px;
-    background: #DDDDDD url("img/bunner.png") no-repeat 73% / contain;
+    background: #DDDDDD url("./img/bunner.png") no-repeat 73% / contain;
     color: #111111;
     padding-left: 280px;
 }
